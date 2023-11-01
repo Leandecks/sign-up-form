@@ -6,9 +6,9 @@
 }
 
 :root {
-  --white: #fff;
+  --bg: rgb(25, 29, 51);
   --prime: #e76f51;
-  --dark: rgb(25, 29, 51);
+  --txt: #fff;
 }
 
 html,
@@ -17,6 +17,7 @@ body {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  background-color: var(--bg);
 }
 
 * {
@@ -45,7 +46,7 @@ body {
   right: 0;
   left: 0;
   font-size: 1rem;
-  color: var(--white);
+  color: var(--txt);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +63,7 @@ body {
   bottom: .5rem;
   left: 0;
   right: 0;
-  color: var(--white);
+  color: var(--txt);
 }
 
 .footer p {
@@ -70,7 +71,7 @@ body {
 }
 
 .footer a {
-  color: var(--white);
+  color: var(--txt);
 }
 
 .footer a:hover {
@@ -84,7 +85,7 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 4rem;
-  color: var(--dark);
+  color: var(--txt);
 }
 
 .content p.desc {
@@ -141,11 +142,11 @@ label input {
 
 label input:focus{
   box-shadow: 0 0 .7rem -.2rem;
-  outline: solid .1rem blue;
+  outline: solid .2rem #219ebc;
 }
 
 input:invalid {
-  outline: solid .1rem red;
+  outline: solid .2rem #e63946;
 }
 
 
@@ -154,7 +155,7 @@ input:invalid {
   background-color: var(--prime);
   border: solid var(--prime);
   font-weight: 700;
-  color: var(--white);
+  color: var(--txt);
   padding: 1rem 5rem;
   margin-top: 3rem;
   border-radius: .5rem;
@@ -162,8 +163,8 @@ input:invalid {
 }
 
 .content button:hover {
-  background-color: white;
-  color: var(--prime);
+  background-color: var(--bg);
+  color: var(--txt);
 }
 
 .content a {
@@ -173,7 +174,7 @@ input:invalid {
 }
 
 .content a:hover {
-  color: white;
+  color: var(--txt);
   background-color: var(--prime);
   border-radius: .2rem;
 }
@@ -185,6 +186,12 @@ a {
 .highlight {
   padding: 0 .5rem;
   background-color: var(--prime);
-  color: white;
+  color: var(--bg);
   border-radius: .5rem;
+}
+
+.pars {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
