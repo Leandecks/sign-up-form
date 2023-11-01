@@ -143,18 +143,6 @@ label input:focus{
   box-shadow: 0 0 .7rem -.2rem;
   outline: solid .1rem blue;
 }
-/*
-label input:valid {
-  outline: solid .1rem greenyellow;
-}
-
-label input:invalid {
-  outline: solid .1rem red;
-}
-
-label input:invalid:required {
-  outline: none;
-} */
 
 input:invalid {
   outline: solid .1rem red;
@@ -164,13 +152,18 @@ input:invalid {
 .content button {
   font-family: "Roboto", sans-serif;
   background-color: var(--prime);
-  border: 0;
+  border: solid var(--prime);
   font-weight: 700;
   color: var(--white);
   padding: 1rem 5rem;
   margin-top: 3rem;
   border-radius: .5rem;
   cursor: pointer;
+}
+
+.content button:hover {
+  background-color: white;
+  color: var(--prime);
 }
 
 .content a {
@@ -187,4 +180,11 @@ input:invalid {
 
 a {
   padding: .32rem;
+}
+
+.highlight {
+  padding: 0 .5rem;
+  background-color: var(--prime);
+  color: white;
+  border-radius: .5rem;
 }
